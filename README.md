@@ -61,12 +61,6 @@ Keep the game's image assets in their original folders so Pygame can find them.
 - **Pygame** — graphics, input, sprites, and game loop
 - **VS Code** — development
 
-## 🗺️ What's Next
-
-- Bullet–alien collision detection
-- Score tracking
-- Lives and game-over behavior
-- Increasing difficulty across levels
 
 ## 📌 About This Project
 
