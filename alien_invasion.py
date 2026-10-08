@@ -138,7 +138,7 @@ class AlienInvasion:
         self.check_fleet_edges()
         self.aliens.update()
 
-        if pygame.sprite.groupcollide(self.aliens,self.bullets):
+        if pygame.sprite.spritecollideany(self.ship, self.aliens):
             print("shit!!!")
             self.ship_hit()
         self._check_aliens_bottom()
@@ -166,9 +166,7 @@ class AlienInvasion:
         else:
             self.game_active = False
 
-    def center_ship(self):
-        self.rect.midbottom = self.screen_rect.midbottom
-        self.x = float(self.rect.x)
+    
 
     def _check_aliens_bottom(self):
         """Check if any aliens have reached the bottom of the screen."""
