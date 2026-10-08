@@ -1,5 +1,6 @@
 import pygame
 from setting import Setting
+from pathlib import Path
 
 class ship:
     """Manage the ship"""
@@ -9,7 +10,8 @@ class ship:
         self.settings = ai_game.setting
 
         #加载图像并且获得其外部的矩形
-        self.image = pygame.image.load("image/ship.bmp").convert_alpha()
+        image_path = Path(__file__).resolve().parent / "image" / "ship.bmp"
+        self.image = pygame.image.load(str(image_path))
         original_width = self.image.get_width()
         original_height = self.image.get_height()
         target_width = 60

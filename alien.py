@@ -1,12 +1,14 @@
 import pygame
 from pygame.sprite import Sprite
 from setting import Setting
+from pathlib import Path
 
 class Alien(Sprite):
     """定义外星人舰队的class"""
     def __init__(self, ai_game):
         super().__init__()
-        self.image = pygame.image.load("image/alien.bmp")
+        image_path = Path(__file__).resolve().parent / "image" / "alien.bmp"
+        self.image = pygame.image.load(str(image_path))
         self.screen = ai_game.screen
         self.rect = self.image.get_rect()
         self.settings = ai_game.setting
