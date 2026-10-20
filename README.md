@@ -1,69 +1,34 @@
 [README.md](https://github.com/user-attachments/files/33187203/README.md)
-# Foreign Invaders Invading 👾
+# Foreign Invaders Invading
 
-A 2D space shooter built with **Python** and **Pygame**.
+In this game about alien invasion, the player controls an armed spaceship that eventually appears in the center. The player can move the spaceship using the arrow keys and use the space bar to shoot. When the game starts, a fleet appears in the sky and moves downwards onto the screen. The player's task is to eliminate these aliens. Once all the aliens are eliminated, a new alien fleet will appear. As long as the spaceship collides with the player's spaceship or reaches the bottom edge of the screen, the player loses one spaceship. The game ends when the player loses three spaceships.
 
-Pilot a spaceship, fire bullets, and face a fleet of alien invaders. This is a learning project where I'm building the game step by step, from player controls to enemy behavior and gameplay mechanics.
+## Features
 
-## 🎮 Controls
+- players can move the ship right or left
+- players can shoot bullet to attack the alien fleet
+- Fleet will change their direction when they touch the edge of the screen
 
-| Key | Action |
-| --- | --- |
-| ← / → | Move the spaceship |
-| Space | Fire a bullet |
-| Q | Quit the game |
+## How to Play
 
-## ✨ Current Features
+- **Left Arrow (←)** — Move the spaceship left.
+- **Right Arrow (→)** — Move the spaceship right.
+- **Space** — Fire bullets.
+- **1** — Quit the game.
 
-- Keyboard-controlled spaceship movement
-- Bullet firing and movement
-- Alien sprites organized into a fleet
-- A real-time game loop built with Pygame
+## Installation
 
-**Project status:** Work in progress. More gameplay features are on the way.
-
-## 🚀 Run Locally
-
-### Requirements
-
-- Python 3
-- Pygame
-
-### Instructions
-
-1. Clone this repository or download its ZIP file.
-2. Open a terminal in the project folder.
-3. Install Pygame:
-
-   ```bash
-   python -m pip install pygame
-   ```
-
-4. Start the game:
-
-   ```bash
-   python alien_invasion.py
-   ```
-
-Keep the game's image assets in their original folders so Pygame can find them.
-
-## 📁 Project Structure
-
-- `alien_invasion.py` — main game and event loop
-- `ship.py` — player spaceship
-- `bullet.py` — projectiles
-- `alien.py` — alien enemies
-- `setting.py` — game settings
-
-## 🛠️ Built With
-
-- **Python** — game logic
-- **Pygame** — graphics, input, sprites, and game loop
-- **VS Code** — development
+1. Go to the "Release Version" section of this GitHub repository.
+2. Download `AlienInvasion-v1.0-Windows.zip`.
+3. Extract the ZIP file.
+4. Open the extracted folder.
+5. Double-click `AlienInvasion.exe` to start the game.
 
 
-## 📌 About This Project
+## Credits
 
-I'm creating *Foreign Invaders Invading* as a hands-on way to learn Python, object-oriented programming, and game development. Each update builds on the last.
+All handwritten code, without AI
 
-Feedback and suggestions are welcome!
+## Future Plans
+
+Warmly welcome suggestions and improvements.
